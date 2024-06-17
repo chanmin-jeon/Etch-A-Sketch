@@ -1,17 +1,19 @@
 body {
-
+    font-family: Arial;
 }
+
 h1 {
     text-align: center;
 }
 
 .etch-a-sketch {
     display: flex; 
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(228, 47, 47);
     margin: auto; 
-    padding: 3rem 3rem 12rem 3rem; 
+    padding: 3rem; 
     border: none; 
     border-radius: 1rem; 
     max-width: 55rem;
@@ -24,8 +26,28 @@ h1 {
 }
 
 .grid-square {
-    height: 50px; 
-    width: 50px; 
-    background-color: lightblue; 
     border: 1.2px solid;
+}
+
+.btns-container {
+    display: flex; 
+    width: 80%; 
+    justify-content: space-around;
+    margin-top: 3rem; 
+    margin-bottom: 0;
+}
+
+button {
+    background-color: lightgray;
+    font-weight: 600;
+    font-size: 1rem;
+    height: 7rem; 
+    width: 7rem; 
+    border: none; 
+    border-radius: 4rem;
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: rgb(171, 171, 171);
 }
